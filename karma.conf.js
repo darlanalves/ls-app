@@ -23,14 +23,14 @@ module.exports = function(config) {
 		files: bowerFiles().concat([
 			'app/src/**/module.js',
 			'app/src/**/*.js',
-			'app/src/**/*.spec.js',
+			'app/src/**/*.spec.js'/*,
 
 			{
-				pattern: 'test/fixtures/**/*.json',
+				pattern: 'test/fixtures/** /*.json',
 				watched: true,
 				served: true,
 				included: false
-			}
+			}*/
 		]),
 
 		// list of files / patterns to exclude
