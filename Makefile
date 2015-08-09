@@ -26,7 +26,7 @@ install:
 		exit 1;\
 	fi;\
 
-clean:
-	rm -rf public/ node_modules/ vendor/
+clean-files:
+	rm -rf public/ node_modules/
 
-build-ci: clean install test build
+build-ci: clean-files install test build

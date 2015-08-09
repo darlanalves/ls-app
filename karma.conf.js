@@ -1,12 +1,9 @@
-// Karma configuration
-// http://karma-runner.github.io/0.12/config/configuration-file.html
-// Generated on 2015-01-28 using
-// generator-karma 0.8.3
 
 module.exports = function(config) {
 	'use strict';
 
-	var bowerPath = require('./.bowerrc').directory;
+	var fs = require('fs');
+	var bowerPath = JSON.parse(fs.readFileSync('./.bowerrc')).directory;
 	var path = require('path');
 
 	function bowerFiles() {
