@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "test": "make test",
-    "build": "make build"
+    "build": "make build-ci"
   },
   "author": "",
   "license": "ISC",
